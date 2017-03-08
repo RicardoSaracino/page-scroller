@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+    <title>Page Scroll Extension</title>
+    <style>
+        body {
+            font-family: "Calibri", "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+            font-size: 100%;
+            margin: 15px;
+            width: 150px;
+        }
+
+        input[type=button] {
+            min-width: 60px;
+            padding: 3px;
+        }
+
+        div {
+            padding: 5px;
+        }
+    </style>
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/script-execution.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+<h1>Scroll Page</h1>
+<div><label title="The lower the faster">Speed Down: <input type="text" id="scroll_speed_down" value="10" style="width:25px" onblur="this.setSelectionRange(0, 9999)"></label></div>
+<div><input type="button" id="scroll_page_start" value="Start"> <input type="button" id="scroll_page_stop" value="Stop"></div>
+</body>
+</html>
+
